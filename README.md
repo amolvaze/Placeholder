@@ -7,7 +7,7 @@ sometimes have issues while dispalying placeholders on web applications.
 
 Problem-2 -> IE 9 or earlier versions do not sometimes support textarea limit property.
 
-Solution:- This project aims to overcome this problem & one of the possible solutions has been presented.
+Solution:- This project aims to overcome these problems &  possible solutions has been presented.
 
 Project makes use of JQuery & few placeholder.js files have been tried to come up with solutions.
 
