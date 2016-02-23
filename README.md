@@ -1,4 +1,4 @@
-# Placeholder Cross Browser Solution - HTML5 only supports this Placeholder attribute:-
+# Placeholder Cross Browser Solution!
 
 Technolgies/Languages used for project - > JavaScript/JQuery, CSS3, HTML5.
 
