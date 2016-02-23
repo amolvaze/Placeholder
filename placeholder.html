@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "styles.css">
+<!--<script type = "text/javascript" src = "placeholdernew.js"></script>-->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<!--<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>-->
+<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+
+<script type = "text/javascript" src = "textarea.js"></script>
+<!--<script type = "text/javascript" src = "jquery-1.11.3.js"></script>-->
+<!--<script type = "text/javascript">
+if(navigator.appVersion.match(/MSIE [\d.]+/)){
+    $(document).find("input[placeholder]").each(function(){
+        if($.trim($(this).val()) == ""){
+            $(this).val($(this).attr("placeholder")).addClass('placeholder');
+        }
+        $(this).on("focus",function(){
+            $(this).hasClass('placeholder') ? $(this).val('').removeClass('placeholder') : false;
+        }).on("blur",function(){
+            $(this).val() == '' ? $(this).val($(this).attr("placeholder")).addClass('placeholder') :false;          
+        });
+    });     
+}
+</script>-->
+<script type = "text/javascript">
+function setPlaceHolderForIE9() {
+    var pos = window.navigator.userAgent.indexOf("MSIE");
+
+    if (pos > 0) {
+        if (window.navigator.userAgent.substring(pos + 5, window.navigator.userAgent.indexOf(".", pos)) < 10) {
+            //alert($("input[placeholder]").val($("input[placeholder]").attr("placeholder")));
+			// code for input placeholder
+            $("input[placeholder]").each(function () {
+                $(this).val($(this).attr("placeholder"));
+            });
+
+            $("input[placeholder]").click(function () {
+                if ($(this).val() === $(this).attr("placeholder")) {
+                    $(this).val('');
+                }
+            });
+
+            $('input[placeholder]').blur(function () {
+
+                if ($.trim($(this).val()).length === 0) {
+                    $(this).val($(this).attr("placeholder"));
+                }
+            });
+			
+			// code for textarea placeholder - added extra
+			
+			$("textarea[placeholder]").each(function () {
+                $(this).val($(this).attr("placeholder"));
+            });
+
+			
+			
+			$("textarea[placeholder]").click(function () {
+                if ($(this).val() === $(this).attr("placeholder")) {
+                    $(this).val('');
+                }
+            });
+
+            $('textarea[placeholder]').blur(function () {
+
+                if ($.trim($(this).val()).length === 0) {
+                    $(this).val($(this).attr("placeholder"));
+                }
+            });
+			
+			// code for password placeholder - added extra
+			
+			 $("input[type='password'][placeholder]").each(function () {
+                $(this).val($(this).attr("placeholder"));
+            });
+
+			
+			
+			$("input[type='password'][placeholder]").click(function () {
+                if ($(this).val() === $(this).attr("placeholder")) {
+                    $(this).val('');
+                }
+            });
+
+            $("input[type='password'][placeholder]").blur(function () {
+
+                if ($.trim($(this).val()).length === 0) {
+                    $(this).val($(this).attr("placeholder"));
+                }
+            });
+			
+
+
+        }
+    }
+}
+
+window.onload = setPlaceHolderForIE9;
+
+</script>
+</head>
+<body>
+<form>
+ Name :   <input type = "text" name = "name" id = "name" placeholder =  "Enter your name" ><br/><br/>
+ Password : <input type = "password" id = "password" name = "password" placeholder  = "password"><br/><br/>
+ Comments : <textarea name = "comments" id = "comments" cols = "50" rows = "2" maxlength = "255" placeholder = "Your comments.." ></textarea>
+ </form>
+</body>
+</html>
