@@ -3,7 +3,7 @@
 Technolgies/Languages used for project - > JavaScript/JQuery, CSS3, HTML5.
 
 Problem: -> Placehoder is a widely used HTML5 attribute supported by modern web browsers like Google Crome, FireFox, IE etc in latest version. However, IE 9 or earlier versions
-have sometimes issues while dispalying placeholders on web applications.
+sometimes have issues while dispalying placeholders on web applications.
 
 Solution:- This project aims to overcome this problem & one of the possible solutions has been presented.
 
