@@ -13,7 +13,7 @@ A final solution has the code which involves a function which runs every time we
 placeholders for the input textbox, textarea fields of the web based sample form. A sample form is designed using HTML5 to test this functionality.
 For password field, placeholder is masking the password showing password as a type for this project.
 
-A solution has a Styles.css file which was initially reated to add placeholder class to the JQuery when page loads into DOM is set to run.
+A solution has a Styles.css file which was initially used or tested to add placeholder class to the JQuery when page loads into DOM is set to run.
 JQuery is being imported from CDN link of JQuery.
 
 Results:-> A final solution is able to show placeholder successfully when web page is runnning in IE9 or earlier versions. Hence a possible
