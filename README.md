@@ -10,7 +10,7 @@ Solution:- This project aims to overcome this problem & one of the possible solu
 Project makes use of JQuery & few placeholder.js files have been tried to come up with solutions.
 
 A final solution has the code which involves a function which runs every time web page loads into DOM. This web page will be still able to show
-placeholders for the input textbox, textarea fields of the web based sample form. A sample form is designed on HTML5 to test this functionality.
+placeholders for the input textbox, textarea fields of the web based sample form. A sample form is designed using HTML5 to test this functionality.
 For password field, placeholder is masking the password showing password as a type for this project.
 
 A solution has a Styles.css file which was initially reated to add placeholder class to the JQuery when page loads into DOM is set to run.
