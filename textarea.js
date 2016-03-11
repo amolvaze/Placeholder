@@ -1,7 +1,7 @@
 // $(document).on('input keyup', 'textarea[maxlength]', function(e) {
 $(document).delegate('textarea[maxlength]', 'input keyup' , function(e) {
     // maxlength attribute does not in IE prior to IE10
-    // http://stackoverflow.com/q/4717168/740639
+   
     var $this = $(this);
     var maxlength = $this.attr('maxlength');
     if (!!maxlength) {
